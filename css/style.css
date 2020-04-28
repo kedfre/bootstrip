@@ -5,17 +5,20 @@ body {
 header {display: block;position: relative;}
 main {background-color: green}
 
-/* Carousel base class */
+/* General */
+.container {
+    margin: 40px auto;
+}
+
+/* Carousel */
 .carousel {
     margin-top: 55px;
     position: relative;
   }
-  /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
   }
-  
   .carousel-item {
     height: 550px;
   }
@@ -25,3 +28,4 @@ main {background-color: green}
   .carousel-item p {
     font-size: 20px;;
   }
+  /* Carousel */
