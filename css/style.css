@@ -7,25 +7,47 @@ main {background-color: green}
 
 /* General */
 .container {
-    margin: 40px auto;
-}
+  margin: 100px auto 0 auto;
+  }
+.color2 {
+  color: #6c757d;
+  }
 
 /* Carousel */
 .carousel {
     margin-top: 55px;
     position: relative;
-  }
+    }
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
-  }
+    }
   .carousel-item {
     height: 550px;
-  }
+    }
   .carousel-item h5 {
-    font-size: 50px;;
-  }
+    font-size: 50px;
+    }
   .carousel-item p {
-    font-size: 20px;;
+    font-size: 20px;
+    }
+
+  /* Articles */
+  .article {
+    margin: 100px 0;
+    padding: 100px 0;
+    border-top: 1px gray dashed;
+    }
+  .article h2 {
+    margin-top: 170px;
+    font-size: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  .article p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  .article img {
+    width: 450px;
+    height: 450px;
+
   }
-  /* Carousel */
