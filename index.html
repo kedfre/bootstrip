@@ -38,11 +38,11 @@
     </header>
     <main role="main">
 
-        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselCaptions" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -87,19 +87,19 @@
                 <img class="rounded-circle" src="/images/singe500.jpg" alt="C'est un singe" width="140" height="140">
                 <h2>Le singe</h2>
                 <p>Hon ! Hon Hon ! Hon hon hon hon hon hon.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Go !</a></p>
+                <p><a class="btn btn-info" href="#" role="button">Go !</a></p>
               </div>
               <div class="col-lg-4 text-center">
                 <img class="rounded-circle" src="/images/amoi.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>A moi ?!</h2>
                 <p>Groa ? Oui c'est une mouette qui coasse.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Go !</a></p>
+                <p><a class="btn btn-info" href="#" role="button">Go !</a></p>
               </div>
               <div class="col-lg-4 text-center">
                 <img class="rounded-circle" src="/images/singe500.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>Le jumeau</h2>
                 <p>Hon ! Hon Hon ! Ah non.. Hin hin ! Ou Hi han ?</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Go !»</a></p>
+                <p><a class="btn btn-info" href="#" role="button">Go !</a></p>
               </div>
             </div>
     
@@ -109,12 +109,12 @@
                 <p>Dans la forêt lointaine, on entend le coucou, du haut de son grand chêne, il répond au hibou. Coucou, coucou. On entend le coucou. Coucou, coucou. On entend le coucou.</p>
               </div>
               <div class="col-md-5">
-                <img src="images/hibou.jpg" alt"Coucou hibou"/>
+                <img src="/images/hibou.jpg" alt"Coucou hibou"/>
               </div>
             </div>
             <div class="row article">
               <div class="col-md-5">
-                <img src="images/poney.jpg" alt"Coucou hibou"/>
+                <img src="/images/poney.jpg" alt"Le poney jacquard"/>
               </div>              
               <div class="col-md-7">
                 <h2>La tendance <span class="color2">de cet hiver</span></h2>
@@ -124,36 +124,31 @@
             <div class="row article">
               <div class="col-md-7">
                 <h2>Un trafic <span class="color2">de têtes de cheval</span> démantelé</h2>
-                <p>Dans la forêt lointaine, on entend le coucou, du haut de son grand chêne, il répond au hibou. Coucou, coucou. On entend le coucou. Coucou, coucou. On entend le coucou.</p>
+                <p>Pas moins de onze personnes suspectées de s'adonner à un important trafic de têtes de cheval dans le quartier Opéra, à Paris, ont été interpellées et placées en garde à vue.</p>
               </div>
               <div class="col-md-5">
-                <img src="images/hibou.jpg" alt"Coucou hibou"/>
+                <img src="/images/masque_cheval.jpg" alt"Le masque tendance"/>
               </div>
             </div>            
     
           </div>      
 
-      
-
     </main>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Top</a></p>  
+      <p>© 2020 Zanimos · <a href="#">Conditions générales</a> · <a href="#">Mentions légales</a></p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        // Activate Carousel
-        //$("#myCarousel").carousel();
         $('.carousel').carousel()
-
-        // Enable Carousel Indicators
-        $(".item").click(function(){
-        $("#myCarousel").carousel(1);
-        });
-
-        // Enable Carousel Controls
         $(".carousel-control-prev").click(function(){
-        $("#myCarousel").carousel("prev");
+          $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+          $("#myCarousel").carousel("next");
         });
     </script>
 </body>

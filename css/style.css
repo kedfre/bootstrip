@@ -2,8 +2,10 @@ body {
  margin: 0;
  padding: 0; 
 }
-header {display: block;position: relative;}
-main {background-color: green}
+header {
+  display: block;
+  position: relative;
+  }
 
 /* General */
 .container {
@@ -32,8 +34,8 @@ main {background-color: green}
     font-size: 20px;
     }
 
-  /* Articles */
-  .article {
+/* Articles */
+.article {
     margin: 50px 0;
     padding: 100px 0 50px 0;
     border-top: 1px gray dashed;
@@ -42,6 +44,7 @@ main {background-color: green}
     margin: 120px 0 10px 0;
     font-size: 55px;
     line-height: 50px;
+    color: #5a5a5a;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
   .article p {
@@ -52,5 +55,11 @@ main {background-color: green}
   .article img {
     width: 450px;
     height: 450px;
+    }
 
+/* Footer */
+footer.container {
+  margin: 50px auto;
+  padding-top: 50px;
+  border-top: 1px gray dashed;
   }
